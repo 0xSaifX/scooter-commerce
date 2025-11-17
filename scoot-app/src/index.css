@@ -1,0 +1,58 @@
+body {
+  line-height: 1.2;
+  font-family: Lexend Deca Regular;
+  background-color: #FFFFFF;
+  display: flex;
+  width: 100dvw;
+  height: 100dvh;
+}
+.nav-bar {
+  width: 100%;
+  position: sticky;
+  color: #495567;
+  margin-left: 60px;
+  display: flex;
+}
+.nav-link{
+  padding: 23px;
+  margin-right: 650px;
+}
+.s1,.s2{
+  margin-right: 20px;
+}
+.image-content{
+  width: 100dvw;
+}
+.manscoot{
+  width: 100%;
+}
+.text-1 {
+  color: #FFFFFF;
+  position: absolute;
+  left: 25%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: justify;
+}
+.text-2{
+  display: flex;
+  position: absolute;
+  top: 60%;
+}
+
+.btn{
+  border: none;
+  background-color: #FCB72B;
+  padding: 15px 20px;
+}
+.img-btn{
+  background-color: #FCB72B;
+  padding: 15px 20px;
+  border: none;
+  position: absolute;
+  top: 90%;
+  left: 18%;
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
