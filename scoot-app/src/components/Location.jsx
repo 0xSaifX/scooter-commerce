@@ -17,7 +17,7 @@ function Location() {
       {/* CTA Section */}
       <div className="container mx-auto px-0 py-12 md:py-20 mb-12">
         <div className="flex flex-col md:flex-row items-center justify-between gap-8 text-center md:text-left">
-          <h2 className="text-2xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-scoot-dark leading-tight max-w-md font-mono">Your City <br /> Not Listed?</h2>
+          <h2 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-scoot-dark leading-tight max-w-md font-mono">Your City <br /> Not Listed?</h2>
           <p className="text-scoot-grey leading-relaxed max-w-xl text-sm md:text-base lg:text-lg">
             If you'd like to see Scoot in your hometown, be sure to let us know. We track requests and plan launches based on demand. Feel free to message us by clicking the link or messaging us on social.
           </p>
