@@ -185,7 +185,7 @@ const Home = () => {
       <section className="container mx-auto px-6 py-12 md:py-20 overflow-hidden">
         <div className="flex flex-col md:flex-row items-center gap-12 lg:gap-32">
           <div className="md:w-1/2 p-10 order-2 md:order-1 text-center md:text-left">
-            <h2 className="text-2xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-scoot-dark mb-6 leading-tight font-mono">Easy to use <br /> riding telemetry</h2>
+            <h2 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-scoot-dark mb-6 leading-tight font-mono">Easy to use <br /> riding telemetry</h2>
             <p className="text-scoot-grey mb-8 leading-relaxed font-grotesk text-sm md:text-base lg:text-lg">
               The Scoot app is available with riding telemetry. This means it can show you your average speed, how long you've been using the scooter, your traveling distance, and many more things all in an easy to use app.
             </p>
@@ -208,7 +208,7 @@ const Home = () => {
             <img src={buildings} alt="City" className="rounded-full w-full max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl mx-auto relative z-10" />
           </div>
           <div className="md:w-1/2 p-10 text-center md:text-left">
-            <h2 className="text-2xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-scoot-dark mb-6 leading-tight font-mono">Coming to a city <br /> near you</h2>
+            <h2 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-scoot-dark mb-6 leading-tight font-mono">Coming to a city <br /> near you</h2>
             <p className="text-scoot-grey mb-8 leading-relaxed font-grotesk text-sm md:text-base lg:text-lg">
               Scoot is available in 4 major cities so far. We're expanding rapidly, so be sure to let us know if you want to see us in your hometown. We're aiming to let our scooters loose on 23 cities over the coming year.
             </p>
@@ -221,7 +221,7 @@ const Home = () => {
       <section className="container mx-auto px-6 py-12 md:py-20 mb-20 overflow-hidden">
         <div className="flex flex-col md:flex-row items-center gap-12 lg:gap-32">
           <div className="md:w-1/2 p-10 order-2 md:order-1 text-center md:text-left">
-            <h2 className="text-2xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-scoot-dark mb-6 leading-tight font-mono">Zero hassle <br /> payments</h2>
+            <h2 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-scoot-dark mb-6 leading-tight font-mono">Zero hassle <br /> payments</h2>
             <p className="text-scoot-grey mb-8 leading-relaxed font-grotesk text-sm md:text-base lg:text-lg">
               Our payment is as easy as one two three. We accept most credit cards and debit cards. You can also link your paypal account inside the app. Need to pay later? No worries! You can defer payment for up to a month.
             </p>
