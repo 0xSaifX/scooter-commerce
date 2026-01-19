@@ -23,7 +23,7 @@ const Values = ({ title = "Our values" }) => {
     ];
 
     return (
-        <section className="container mx-auto px-0 py-12 md:py-20 mb-12">
+        <section className="container justify-center mx-auto px-0 py-12 md:py-20 mb-12">
             <h2 className="text-2xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-scoot-dark mb-12 md:mb-20 text-center md:text-left font-mono">
                 {title}
             </h2>
