@@ -75,7 +75,7 @@ const Footer = () => {
       {/* Call to Action Banner */}
       <div className="bg-scoot-dark text-white py-16 px-6 overflow-hidden relative">
         <div className="container mx-auto flex flex-col md:flex-row items-center justify-between gap-8 relative z-10">
-          <h2 className="text-2xl md:text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight text-center md:text-left max-w-md font-mono">
+          <h2 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold leading-tight text-center md:text-left max-w-md font-mono">
             Sign up and <br /> Scoot off today
           </h2>
           <div className="flex gap-4">
@@ -124,7 +124,7 @@ const Home = () => {
 
         <div className="container mx-auto px-6 h-full flex items-center relative z-10">
           <div className="max-w-xl text-white text-center md:text-left mx-auto md:mx-0 pt-20 md:pt-0">
-            <h1 className="text-3xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-8 leading-tight font-mono">
+            <h1 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold mb-8 leading-tight font-mono">
               Scooter sharing <br /> made simple
             </h1>
 
