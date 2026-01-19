@@ -1,121 +1,59 @@
-import careers from "../assets/careers.png";
-import bookguy from "../assets/careers1.png"
 import React from 'react';
-import value1 from "../assets/value1.png";
-import value2 from "../assets/value2.png";
-import value3 from "../assets/value3.png";
+import HeroHeader from "./HeroHeader";
+import Values from "./Values";
+import Button from "./Button";
+import careers from "../assets/careers.png";
+import bookguy from "../assets/careers1.png";
 
+function Careers() {
+  const jobs = [
+    { title: "General Manager", location: "Jakarta, Indonesia" },
+    { title: "UI/UX Designer", location: "Yokohama, Japan" },
+    { title: "Blog Content Copywriter", location: "New York, United States" },
+    { title: "Graphic Designer", location: "New York, United States" },
+    { title: "Fleet Supervisor", location: "Jakarta, Indonesia" },
+    { title: "UX Analyst", location: "London, United Kingdom" },
+  ];
 
-function Careers () {
   return (
-    <div>
-      
-      <img src={careers} />
+    <div className="overflow-x-hidden font-grotesk">
+      <HeroHeader title="Careers" image={careers} alt="Careers" />
 
-      <section style={{display:"flex",marginTop:"8rem",width:"vw"}} >
-        <div className="info-text" style={{maxWidth:"25rem",marginLeft:"5rem",marginRight:"10rem"}}>
-          <h2 style={{fontFamily:'"Space Mono", monospace'}}>Care to join our <br />mission</h2>
-          <p style={{marginBottom:"3rem"}}>We're always looking for ambitious individuals to help us on our journey. If you're passionate about our mission to provide clean, accessible transport to improve urban living we want to hear from you!</p>
-          <button className='btn'>Say Hello</button>
-        </div>
-        <div className='info-img'>
-          <img src={bookguy} alt="A guy standing and explaining something" />
+      {/* Mission Section */}
+      <section className="container mx-auto px-6 py-12 md:py-20 overflow-hidden">
+        <div className="flex flex-col md:flex-row items-center gap-12 lg:gap-32">
+          <div className="md:w-1/2 text-center md:text-left order-2 md:order-1">
+            <h2 className="text-2xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-scoot-dark mb-6 leading-tight font-mono">Care to join our <br />mission</h2>
+            <p className="text-scoot-grey mb-8 leading-relaxed text-sm md:text-base lg:text-lg">
+              We're always looking for ambitious individuals to help us on our journey. If you're passionate about our mission to provide clean, accessible transport to improve urban living we want to hear from you!
+            </p>
+            <Button>Say Hello</Button>
+          </div>
+          <div className="md:w-1/2 relative order-1 md:order-2">
+            <div className="bg-scoot-light rounded-full absolute -right-full top-0 w-[200%] h-full -z-10 rounded-l-full opacity-50"></div>
+            <img src={bookguy} alt="Join us" className="rounded-full w-full max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl mx-auto relative z-10" />
+          </div>
         </div>
       </section>
 
-      <section className="values-section">
-        <h2 style={{fontFamily:'"Space Mono", monospace',marginTop:"8rem"}}>Why join us?</h2>
-        <div className="values-imgs">
-          <img src={value1} alt="Our tech" />
-          <img src={value2} alt="Our integrity" />
-          <img src={value3} alt="Our community" />
-        </div>
+      <Values title="Why join us?" />
 
-        <div className="values-text">
-          <div>
-            <h3>Our tech</h3>
-            <p>
-              We’re using cutting-edge technology to drive accessible urban transportation
-              forward. Our fully electric scooters are a joy to ride!
-            </p>
-          </div>
-          <div>
-            <h3>Our integrity</h3>
-            <p>
-              We're fully committed to delivering a great yet safe, sustainable
-              micro-mobility experience in every city we serve.
-            </p>
-          </div>
-          <div>
-            <h3>Our community</h3>
-            <p>
-              We support every community we serve. All workers are paid a living wage based on
-              their location and are Scoot employees.
-            </p>
-          </div>
+      {/* Jobs Section */}
+      <section className="container mx-auto px-6 py-12 md:py-20">
+        <div className="max-w-4xl mx-auto flex flex-col gap-6">
+          {jobs.map((job, index) => (
+            <div key={index} className="bg-scoot-snow p-6 md:p-8 flex flex-col md:flex-row items-center justify-between gap-6 hover:border-scoot-yellow border-2 border-transparent transition-colors duration-300 group">
+              <div className="text-center md:text-left">
+                <h3 className="text-lg md:text-xl lg:text-2xl font-bold text-scoot-dark mb-2 font-mono">{job.title}</h3>
+                <p className="text-scoot-dark text-sm md:text-base">{job.location}</p>
+              </div>
+              <Button className="w-full md:w-auto">Apply</Button>
+            </div>
+          ))}
         </div>
-      </section> 
-
-      <div style={{width:"90%",maxWidth:"1000px",margin:"auto",marginRight:"10rem"}}>
-        <span style={{padding:"1.5rem", background:"#f2f5f9",margin:"1.5rem 2rem",display:"flex",width:"100%"}}>
-          <div style={{marginRight:"34.7rem"}}>
-          <h3>General Manager</h3>
-          <p>Jakarta, Indonesia</p>
-          </div>
-            <div>
-                <button className="btn" style={{float:"right"}}>Apply</button>
-            </div>
-        </span>
-        <span style={{padding:"1.5rem", background:"#f2f5f9",margin:"1.5rem 2rem",display:"flex",width:"100%"}}>
-          <div style={{marginRight:"35.9rem"}}>
-          <h3>UI/UX Designer</h3>
-          <p>Yokohama, Japan</p>
-          </div>
-            <div>
-                <button className="btn" style={{float:"right"}}>Apply</button>
-            </div>
-        </span>
-        <span style={{padding:"1.5rem", background:"#f2f5f9",margin:"1.5rem 2rem",display:"flex",width:"100%"}}>
-          <div style={{marginRight:"30rem"}}>
-          <h3>Blog Content Copywriter</h3>
-          <p>New York, United States</p>
-          </div>
-            <div>
-                <button className="btn" style={{float:"right"}}>Apply</button>
-            </div>
-        </span>
-        <span style={{padding:"1.5rem", background:"#f2f5f9",margin:"1.5rem 2rem",display:"flex",width:"100%"}}>
-          <div style={{marginRight:"33rem"}}>
-          <h3>Graphic Designer</h3>
-          <p>New York, United States</p>
-          </div>
-            <div>
-                <button className="btn" style={{float:"right"}}>Apply</button>
-            </div>
-        </span>
-        <span style={{padding:"1.5rem", background:"#f2f5f9",margin:"1.5rem 2rem",display:"flex",width:"100%"}}>
-          <div style={{marginRight:"35.3rem"}}>
-          <h3>Fleet Supervisor</h3>
-          <p>Jakarta, Indonesia</p>
-          </div>
-            <div>
-                <button className="btn" style={{float:"right"}}>Apply</button>
-            </div>
-        </span>
-        <span style={{padding:"1.5rem", background:"#f2f5f9",margin:"1.5rem 2rem",display:"flex",width:"100%"}}>
-          <div style={{marginRight:"33rem"}}>
-          <h3>UX Analyst</h3>
-          <p>London, United Kingdom</p>
-          </div>
-            <div>
-                <button className="btn" style={{float:"right"}}>Apply</button>
-            </div>
-        </span>
-      </div>
-      
-      
+      </section>
     </div>
   )
 }
 
-export default Careers
+export default Careers;

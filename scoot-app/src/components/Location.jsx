@@ -1,28 +1,29 @@
 import React from 'react';
+import HeroHeader from "./HeroHeader";
+import Button from "./Button";
 import location from "../assets/location.png";
-import circles from "../assets/circles.png";
 import map from "../assets/map.png";
 
-
-function Location () {
+function Location() {
   return (
-    <div>
-      
-      <header>
-        <img src={location} style={{position:"relative",maxWidth:"100vw",flex:"wrap"}} />
-        <h1 style={{fontFamily:'"Space Mono", monospace', position:"absolute",top:"27%",color:"white",marginLeft:"7rem"}}>Locations</h1>
-        <img src={circles} style={{position:"absolute"}}/>
-      </header>
-      <main style={{alignContent:"center",padding:"9rem"}}>
-        <img src={map} style={{maxWidth:"90%"}}/>
+    <div className="overflow-x-hidden font-grotesk">
+      <HeroHeader title="Locations" image={location} alt="Locations" />
+
+      {/* Map Section */}
+      <main className="container mx-auto px-6 py-12 md:py-20 flex justify-center">
+        <img src={map} alt="Map of locations" className="w-full h-auto max-w-4xl lg:max-w-6xl xl:max-w-7xl" />
       </main>
 
-      <div style={{display:"flex",justifyContent:"center"}}>
-        <h1 style={{fontFamily:'"Space Mono",monospace',fontWeight:"2rem"}}>Your City <br /> Not Listed?</h1>
-        <p style={{maxWidth:"30rem",marginLeft:"5rem",marginRight:"5rem"}}>If you'd like to see Scoot in your hometown, be sure to let us know. We track requests and plan launches based on demand. Feel free to message us by clicking the link or messaging us on social.</p>
-        <button className='btn' style={{marginTop:"1rem",padding:"2px 35px"}}>Message Us</button>
+      {/* CTA Section */}
+      <div className="container mx-auto px-6 py-12 md:py-20 mb-12">
+        <div className="flex flex-col md:flex-row items-center justify-between gap-8 text-center md:text-left">
+          <h2 className="text-2xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-scoot-dark leading-tight max-w-md font-mono">Your City <br /> Not Listed?</h2>
+          <p className="text-scoot-grey leading-relaxed max-w-xl text-sm md:text-base lg:text-lg">
+            If you'd like to see Scoot in your hometown, be sure to let us know. We track requests and plan launches based on demand. Feel free to message us by clicking the link or messaging us on social.
+          </p>
+          <Button>Message Us</Button>
+        </div>
       </div>
-
     </div>
   )
 }

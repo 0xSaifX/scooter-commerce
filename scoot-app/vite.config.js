@@ -1,22 +1,12 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
+import tailwindcss from '@tailwindcss/vite'
 
+// https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react()],
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx",
+  root: './',
+  plugins: [
+    react(),
+    tailwindcss(),
   ],
-  theme: {extend:{
-    colors :{
-      primary:"#FCB72B",
-      darkBlue:"#495567",
-      grayBlue:"#939CAA"
-    },
-    fontFamily:{
-      sans:['"Lexend Deca Regular"', "Monospace" ],
-    },
-  },
- },
-  plugins: [],
-});
+})

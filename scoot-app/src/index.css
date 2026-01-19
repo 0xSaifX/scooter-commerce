@@ -1,58 +1,31 @@
-body {
-  line-height: 1.2;
-  font-family: Lexend Deca Regular;
-  background-color: #FFFFFF;
-  display: flex;
-  width: 100dvw;
-  height: 100dvh;
-}
-.nav-bar {
-  width: 100%;
-  position: sticky;
-  color: #495567;
-  margin-left: 60px;
-  display: flex;
-}
-.nav-link{
-  padding: 23px;
-  margin-right: 650px;
-}
-.s1,.s2{
-  margin-right: 20px;
-}
-.image-content{
-  width: 100dvw;
-}
-.manscoot{
-  width: 100%;
-}
-.text-1 {
-  color: #FFFFFF;
-  position: absolute;
-  left: 25%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  text-align: justify;
-}
-.text-2{
-  display: flex;
-  position: absolute;
-  top: 60%;
+@import "tailwindcss";
+
+@theme {
+  --color-scoot-yellow: #FCB72B;
+  --color-scoot-dark: #495567;
+  --color-scoot-grey: #939CAA;
+  --color-scoot-light: #E5ECF4;
+  --color-scoot-snow: #F2F5F9;
+  --color-scoot-cream: #FFF4DF;
+  --color-scoot-night: #333A44;
+
+  --font-mono: "Space Mono", monospace;
+  --font-grotesk: "Space Grotesk", sans-serif;
 }
 
-.btn{
-  border: none;
-  background-color: #FCB72B;
-  padding: 15px 20px;
+@layer base {
+  body {
+    font-family: var(--font-grotesk);
+    color: var(--color-scoot-dark);
+    @apply antialiased overflow-x-hidden;
+    background-color: #FFFFFF;
+  }
 }
-.img-btn{
-  background-color: #FCB72B;
-  padding: 15px 20px;
-  border: none;
+
+/* Custom decorative shapes */
+.circle-bg {
   position: absolute;
-  top: 90%;
-  left: 18%;
+  border-radius: 50%;
+  background-color: #E5ECF4;
+  z-index: -1;
 }
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
