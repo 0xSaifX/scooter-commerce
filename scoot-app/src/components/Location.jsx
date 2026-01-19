@@ -10,12 +10,12 @@ function Location() {
       <HeroHeader title="Locations" image={location} alt="Locations" />
 
       {/* Map Section */}
-      <main className="container mx-auto px-6 py-12 md:py-20 flex justify-center">
+      <main className="container mx-auto px-0 py-12 md:py-20 flex justify-center">
         <img src={map} alt="Map of locations" className="w-full h-auto max-w-4xl lg:max-w-6xl xl:max-w-7xl" />
       </main>
 
       {/* CTA Section */}
-      <div className="container mx-auto px-6 py-12 md:py-20 mb-12">
+      <div className="container mx-auto px-0 py-12 md:py-20 mb-12">
         <div className="flex flex-col md:flex-row items-center justify-between gap-8 text-center md:text-left">
           <h2 className="text-2xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-scoot-dark leading-tight max-w-md font-mono">Your City <br /> Not Listed?</h2>
           <p className="text-scoot-grey leading-relaxed max-w-xl text-sm md:text-base lg:text-lg">

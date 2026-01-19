@@ -25,7 +25,7 @@ const Navbar = () => {
 
   return (
     <nav className="relative z-50 bg-white">
-      <div className="container mx-auto px-6 py-6 flex items-center justify-between">
+      <div className="container mx-auto px-0 py-6 flex items-center justify-between">
         <div className="flex items-center gap-12">
           {/* Hamburger (Mobile) */}
           <button
@@ -73,7 +73,7 @@ const Footer = () => {
   return (
     <footer className="font-mono">
       {/* Call to Action Banner */}
-      <div className="bg-scoot-dark text-white py-16 px-6 overflow-hidden relative">
+      <div className="bg-scoot-dark text-white py-16 px-0 overflow-hidden relative">
         <div className="container mx-auto flex flex-col md:flex-row items-center justify-between gap-8 relative z-10">
           <h2 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold leading-tight text-center md:text-left max-w-md font-mono">
             Sign up and <br /> Scoot off today
@@ -87,7 +87,7 @@ const Footer = () => {
       </div>
 
       {/* Bottom Footer */}
-      <div className="bg-scoot-night text-white py-12 px-6">
+      <div className="bg-scoot-night text-white py-12 px-0">
         <div className="container mx-auto flex flex-col md:flex-row items-center justify-between gap-8">
 
           <div className="flex flex-col md:flex-row items-center gap-12">
@@ -122,7 +122,7 @@ const Home = () => {
           <div className="absolute inset-0 bg-black/40 md:hidden"></div>
         </div>
 
-        <div className="container mx-auto px-6 h-full flex items-center relative z-10">
+        <div className="container mx-auto px-0 h-full flex items-center relative z-10">
           <div className="max-w-xl text-white text-center md:text-left mx-auto md:mx-0 pt-20 md:pt-0">
             <h1 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold mb-8 leading-tight font-mono">
               Scooter sharing <br /> made simple
@@ -145,7 +145,7 @@ const Home = () => {
       </section>
 
       {/* Steps Section */}
-      <section className="container mx-auto px-6">
+      <section className="container mx-auto px-0">
         <div className="relative">
           {/* Connecting Line (Desktop) */}
           <div className="hidden md:block absolute top-[45px] left-0 w-full h-4 bg-scoot-light -z-10"></div>
@@ -182,7 +182,7 @@ const Home = () => {
       </section>
 
       {/* Telemetry Feature */}
-      <section className="container mx-auto px-6 py-12 md:py-20 overflow-hidden">
+      <section className="container mx-auto px-0 py-12 md:py-20 overflow-hidden">
         <div className="flex flex-col md:flex-row items-center gap-12 lg:gap-32">
           <div className="md:w-1/2 p-10 order-2 md:order-1 text-center md:text-left">
             <h2 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-scoot-dark mb-6 leading-tight font-mono">Easy to use <br /> riding telemetry</h2>
@@ -200,7 +200,7 @@ const Home = () => {
       </section>
 
       {/* City Feature */}
-      <section className="container mx-auto px-6 py-12 md:py-20 overflow-hidden">
+      <section className="container mx-auto px-0 py-12 md:py-20 overflow-hidden">
         <div className="flex flex-col md:flex-row items-center gap-12 lg:gap-32">
           <div className="md:w-1/2 relative">
             {/* Circle Background: Left aligned */}
@@ -218,7 +218,7 @@ const Home = () => {
       </section>
 
       {/* Payment Feature */}
-      <section className="container mx-auto px-6 py-12 md:py-20 mb-20 overflow-hidden">
+      <section className="container mx-auto px-0 py-12 md:py-20 mb-20 overflow-hidden">
         <div className="flex flex-col md:flex-row items-center gap-12 lg:gap-32">
           <div className="md:w-1/2 p-10 order-2 md:order-1 text-center md:text-left">
             <h2 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-scoot-dark mb-6 leading-tight font-mono">Zero hassle <br /> payments</h2>

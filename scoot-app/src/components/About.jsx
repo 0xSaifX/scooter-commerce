@@ -55,7 +55,7 @@ function About() {
       <HeroHeader title="About" image={about} alt="About Us" />
 
       {/* Mobility Section */}
-      <section className="container mx-auto px-6 py-12 md:py-20 overflow-hidden">
+      <section className="container mx-auto px-0 py-12 md:py-20 overflow-hidden">
         <div className="flex flex-col md:flex-row items-center gap-12 lg:gap-32">
           <div className="md:w-1/2 text-center md:text-left">
             <h2 className="text-2xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-scoot-dark mb-6 leading-tight font-mono">Mobility for the <br /> digital era</h2>
@@ -72,7 +72,7 @@ function About() {
       </section>
 
       {/* Urban Living Section */}
-      <section className="container mx-auto px-6 py-12 md:py-20 mb-12 overflow-hidden">
+      <section className="container mx-auto px-0 py-12 md:py-20 mb-12 overflow-hidden">
         <div className="flex flex-col md:flex-row items-center gap-12 lg:gap-32">
           <div className="md:w-1/2 order-2 md:order-1 relative">
             <div className="bg-scoot-light rounded-full absolute -left-full top-0 w-[200%] h-full -z-10 rounded-r-full opacity-50"></div>
@@ -91,7 +91,7 @@ function About() {
       <Values />
 
       {/* FAQs */}
-      <section className="container mx-auto px-6 py-12 md:py-20">
+      <section className="container mx-auto px-0 py-12 md:py-20">
         <h2 className="text-2xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-scoot-dark mb-12 text-center font-mono">FAQs</h2>
 
         {faqs.map((group, groupIndex) => (

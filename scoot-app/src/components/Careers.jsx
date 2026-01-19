@@ -20,7 +20,7 @@ function Careers() {
       <HeroHeader title="Careers" image={careers} alt="Careers" />
 
       {/* Mission Section */}
-      <section className="container mx-auto px-6 py-12 md:py-20 overflow-hidden">
+      <section className="container mx-auto px-0 py-12 md:py-20 overflow-hidden">
         <div className="flex flex-col md:flex-row items-center gap-12 lg:gap-32">
           <div className="md:w-1/2 text-center md:text-left order-2 md:order-1">
             <h2 className="text-2xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-scoot-dark mb-6 leading-tight font-mono">Care to join our <br />mission</h2>
@@ -39,7 +39,7 @@ function Careers() {
       <Values title="Why join us?" />
 
       {/* Jobs Section */}
-      <section className="container mx-auto px-6 py-12 md:py-20">
+      <section className="container mx-auto px-0 py-12 md:py-20">
         <div className="max-w-4xl mx-auto flex flex-col gap-6">
           {jobs.map((job, index) => (
             <div key={index} className="bg-scoot-snow p-6 md:p-8 flex flex-col md:flex-row items-center justify-between gap-6 hover:border-scoot-yellow border-2 border-transparent transition-colors duration-300 group">
