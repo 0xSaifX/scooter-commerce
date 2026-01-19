@@ -58,7 +58,7 @@ function About() {
       <section className="container mx-auto px-0 py-12 md:py-20 overflow-hidden">
         <div className="flex flex-col md:flex-row items-center gap-12 lg:gap-32">
           <div className="md:w-1/2 text-center md:text-left">
-            <h2 className="text-2xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-scoot-dark mb-6 leading-tight font-mono">Mobility for the <br /> digital era</h2>
+            <h2 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-scoot-dark mb-6 leading-tight font-mono">Mobility for the <br /> digital era</h2>
             <p className="text-scoot-grey mb-8 leading-relaxed text-sm md:text-base lg:text-lg">
               Getting around should be simple (and even fun!) for everyone. We embrace
               technology to provide low-cost, smart access to scooters at your fingertips.
@@ -79,7 +79,7 @@ function About() {
             <img src={train} alt="Train" className="rounded-full w-full max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl mx-auto relative z-10" />
           </div>
           <div className="md:w-1/2 order-1 md:order-2 text-center md:text-left">
-            <h2 className="text-2xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-scoot-dark mb-6 leading-tight font-mono">Better urban <br /> living</h2>
+            <h2 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-scoot-dark mb-6 leading-tight font-mono">Better urban <br /> living</h2>
             <p className="text-scoot-grey mb-8 leading-relaxed text-sm md:text-base lg:text-lg">
               We're helping connect cities and bring people closer together. Our scooters are
               fully electric and we offset the minimal carbon footprint for each ride.
