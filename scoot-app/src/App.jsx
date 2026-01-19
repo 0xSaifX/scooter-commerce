@@ -145,7 +145,7 @@ const Home = () => {
       </section>
 
       {/* Steps Section */}
-      <section className="container mx-auto px-0">
+      <section className="container mx-auto px-6">
         <div className="relative">
           {/* Connecting Line (Desktop) */}
           <div className="hidden md:block absolute top-[45px] left-0 w-full h-4 bg-scoot-light -z-10"></div>
