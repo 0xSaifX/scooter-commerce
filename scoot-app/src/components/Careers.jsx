@@ -23,7 +23,7 @@ function Careers() {
       <section className="container mx-auto px-0 py-12 md:py-20 overflow-hidden">
         <div className="flex flex-col md:flex-row items-center gap-12 lg:gap-32">
           <div className="md:w-1/2 text-center md:text-left order-2 md:order-1">
-            <h2 className="text-2xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-scoot-dark mb-6 leading-tight font-mono">Care to join our <br />mission</h2>
+            <h2 className="text-xl md:text-2xl lg:text-3xl xl:text-5xl font-bold text-scoot-dark mb-6 leading-tight font-mono">Care to join our <br />mission</h2>
             <p className="text-scoot-grey mb-8 leading-relaxed text-sm md:text-base lg:text-lg">
               We're always looking for ambitious individuals to help us on our journey. If you're passionate about our mission to provide clean, accessible transport to improve urban living we want to hear from you!
             </p>
